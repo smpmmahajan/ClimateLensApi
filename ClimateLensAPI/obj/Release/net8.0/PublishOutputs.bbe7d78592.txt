@@ -1,0 +1,11 @@
+D:\Sagar\VS2022\ClimateLensApi\ClimateLensApi\ClimateLensAPI\obj\Release\net8.0\PubTmp\Out\ClimateLensAPI.exe
+D:\Sagar\VS2022\ClimateLensApi\ClimateLensApi\ClimateLensAPI\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+D:\Sagar\VS2022\ClimateLensApi\ClimateLensApi\ClimateLensAPI\obj\Release\net8.0\PubTmp\Out\appsettings.json
+D:\Sagar\VS2022\ClimateLensApi\ClimateLensApi\ClimateLensAPI\obj\Release\net8.0\PubTmp\Out\ClimateLensAPI.dll
+D:\Sagar\VS2022\ClimateLensApi\ClimateLensApi\ClimateLensAPI\obj\Release\net8.0\PubTmp\Out\ClimateLensAPI.deps.json
+D:\Sagar\VS2022\ClimateLensApi\ClimateLensApi\ClimateLensAPI\obj\Release\net8.0\PubTmp\Out\ClimateLensAPI.runtimeconfig.json
+D:\Sagar\VS2022\ClimateLensApi\ClimateLensApi\ClimateLensAPI\obj\Release\net8.0\PubTmp\Out\ClimateLensAPI.pdb
+D:\Sagar\VS2022\ClimateLensApi\ClimateLensApi\ClimateLensAPI\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+D:\Sagar\VS2022\ClimateLensApi\ClimateLensApi\ClimateLensAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+D:\Sagar\VS2022\ClimateLensApi\ClimateLensApi\ClimateLensAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Sagar\VS2022\ClimateLensApi\ClimateLensApi\ClimateLensAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
