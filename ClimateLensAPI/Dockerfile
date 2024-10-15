@@ -13,6 +13,7 @@ RUN dotnet restore "./ClimateLensAPI/ClimateLensAPI.csproj"
 COPY . .
 RUN ls -ltr
 WORKDIR "/src/ClimateLensAPI"
+RUN ls -ltr
 RUN dotnet build "./ClimateLensAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
