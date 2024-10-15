@@ -11,7 +11,7 @@ WORKDIR /src
 COPY ["ClimateLensAPI.csproj", "ClimateLensAPI/"]
 RUN dotnet restore "./ClimateLensAPI/ClimateLensAPI.csproj"
 COPY . .
-RUN echo ls
+RUN ls -ltr
 WORKDIR "/src/ClimateLensAPI"
 RUN dotnet build "./ClimateLensAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
