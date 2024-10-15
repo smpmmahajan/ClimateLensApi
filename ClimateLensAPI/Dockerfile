@@ -27,17 +27,23 @@
 
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-WORKDIR /App
+USER app
+WORKDIR /app
+EXPOSE 8080
 
-# Copy everything
-COPY . ./
-# Restore as distinct layers
-RUN dotnet restore
-# Build and publish a release
-RUN dotnet publish -c Release -o out
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src/ClimateLensAPI
+COPY ["./ClimateLensAPI.csproj", "."]
+RUN dotnet restore "./ClimateLensAPI.csproj"
+COPY . .
+RUN dotnet build "./ClimateLensAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
-# Build runtime image
-FROM  mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /App
-COPY --from=build-env /App/out .
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./ClimateLensAPI.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "ClimateLensAPI.dll"]
